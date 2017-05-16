@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ServiceNow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+    <div class="banner">
+      <section>
+        <nav>
+          <ul>
+            <li><a href="/">Knowledge</a></li>
+            <li><a href="/">Service Catalog</a></li>
+            <li><a href="/">Requests</a></li>
+            <li><a href="/">System Status</a></li>
+          </ul>
+          <a href="/" class="user">
+            <img src="images/user-one.jpg" alt="avatar">
+            <span>Zachary Payne</span>
+          </a>
+        </nav>
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search articles, catalog items, requests, or questions..."
+          />
+          <small>Enter your terms, then press <span>enter</span> to search</small>
+        </div>
+        <ul class="buttons">
+          <li>
+            <a href="/">
+              <strong>Knowledge Base</strong>
+              <p>Browse and search for articles, rate or submit feedback</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <strong>Place an Order</strong>
+              <p>Browse the catalog for services<br />and items you need</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <strong>Get Help</strong>
+              <p>Contact support to make a request, or report a problem</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <strong>Community</strong>
+              <p>Community-sourced answers to your questions</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="content">
+      <div class="wrapper">
+        <div class="list">
+          <h3>Top Rated Articles</h3>
+          <ul>
+            <li><a href="/">How to create a Custom Search Engine in Google Chrome in 3 steps</a></li>
+            <li><a href="/">Benefits start date</a></li>
+            <li><a href="/">New Expense Report Policy</a></li>
+          </ul>
+        </div>
+        <div class="list popular">
+          <h3>Popular Questions</h3>
+          <ul>
+            <li>
+              <a href="/">
+                <div class="imgWrapper">
+                  <img src="images/user-two.jpg" alt="avatar">
+                </div>
+                <span>Why can’t I get my custom Sass into the Portal?</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <div class="imgWrapper orange">
+                  <img src="images/user-three.jpg" alt="avatar">
+                </div>
+                <span>Caching plugin?</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <div class="imgWrapper">
+                  <img src="images/user-four.jpg" alt="avatar">
+                </div>
+                <span>What is a good Bootstrap replacement?</span>
+              </a>
+            </li>
+             <li>
+              <a href="/">
+                <div class="imgWrapper">
+                  <img src="images/user-five.jpg" alt="avatar">
+                </div>
+                <span>What is vanilla javascript?</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <div class="imgWrapper">
+                  <img src="images/user-six.jpg" alt="avatar">
+                </div>
+                <span>What is line-block?</span>
+              </a>
+            </li>
+          </ul>
+          <button onclick="expandList()">View All</button>
+        </div>
+        <div class="list">
+          <h3>My Open Incidents</h3>
+          <ul>
+            <li><a href="/">Main server not working</a></li>
+            <li><a href="/">Can’t launch 64-bit Windows virtual machine</a></li>
+            <li><a href="/">Sales forecast spreadsheet is READ ONLY</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function expandList() {
+      document.querySelector(".popular ul").classList.add("all");
+    }
+  </script>
+</html>

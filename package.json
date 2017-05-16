@@ -1,0 +1,12 @@
+{
+  "name": "servicenow-codetest",
+  "version": "1.0.0",
+  "description": "code test",
+  "main": "dist/index.html",
+  "author": "Ajay Giri",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
